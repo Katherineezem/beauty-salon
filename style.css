@@ -1,0 +1,262 @@
+/* Общие настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF0F3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Шапка */
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #E75480;
+  font-size: 28px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #E75480;
+}
+
+/* Главный экран */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #FFD6E0;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #E75480;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Кнопка */
+.button {
+  display: inline-block;
+  background-color: #E75480;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #c93f6a;
+}
+
+/* Блоки */
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+section h2 {
+  color: #E75480;
+  margin-bottom: 15px;
+}
+
+/* Подвал */
+footer {
+  background-color: #E75480;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* Карточки */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 220px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card .icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #E75480;
+  margin-bottom: 8px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #E75480;
+}
+/* Фильтры магазина */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.filter {
+  background-color: white;
+  color: #E75480;
+  border: 2px solid #E75480;
+  padding: 8px 22px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter.active,
+.filter:hover {
+  background-color: #E75480;
+  color: white;
+}
+
+/* Кнопка покупки */
+.buy {
+  margin-top: 15px;
+  background-color: #E75480;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buy:hover {
+  background-color: #c93f6a;
+}
+
+/* Спрятанные товары */
+.hidden {
+  display: none;
+}
+/* Форма записи */
+.booking-form {
+  background-color: white;
+  max-width: 450px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #E75480;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #FFD6E0;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  outline: none;
+  border-color: #E75480;
+}
+
+.booking-form .button {
+  width: 100%;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#message.error {
+  color: #d62839;
+}
+
+#message.success {
+  color: #2e9e5b;
+}
+/* Корзина */
+.cart-box {
+  background-color: white;
+  max-width: 450px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-box ul {
+  list-style: none;
+  text-align: left;
+}
+
+.cart-box li {
+  padding: 10px 0;
+  border-bottom: 1px solid #FFD6E0;
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: #d62839;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #E75480;
+}
