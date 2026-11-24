@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose Beauty Salon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Rose Beauty Salon</h1>
+    <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+      <a href="#services">Services</a>
+      <a href="#specialists">Specialists</a>
+      <a href="#shop">Shop</a>
+      <a href="#booking">Book now</a>
+  </header>
+
+  <section class="hero">
+    <h2>Beauty that starts with care</h2>
+    <p>Hair, nails, skincare and more, in the heart of the city.</p>
+    <a class="button" href="#booking">Book an appointment</a>
+  </section>
+
+  <section id="services">
+  <h2>Our services</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">💇‍♀️</div>
+      <h3>Hair</h3>
+      <p>Haircut, coloring, styling</p>
+      <p class="price">from €25</p>
+    </div>
+    <div class="card">
+      <div class="icon">💅</div>
+      <h3>Nails</h3>
+      <p>Manicure, pedicure, nail art</p>
+      <p class="price">from €20</p>
+    </div>
+    <div class="card">
+      <div class="icon">🧖‍♀️</div>
+      <h3>Face</h3>
+      <p>Cleansing, masks, skin care</p>
+      <p class="price">from €35</p>
+    </div>
+    <div class="card">
+      <div class="icon">💄</div>
+      <h3>Makeup</h3>
+      <p>Day, evening and event makeup</p>
+      <p class="price">from €30</p>
+    </div>
+  </div>
+</section>
+
+  <section id="specialists">
+  <h2>Our specialists</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">👩‍🎨</div>
+      <h3>Anna</h3>
+      <p>Hair stylist</p>
+    </div>
+    <div class="card">
+      <div class="icon">👩‍🔧</div>
+      <h3>Maria</h3>
+      <p>Nail master</p>
+    </div>
+    <div class="card">
+      <div class="icon">👩‍⚕️</div>
+      <h3>Elena</h3>
+      <p>Cosmetologist</p>
+    </div>
+  </div>
+</section>
+
+  <section id="shop">
+  <h2>Shop</h2>
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="hair">Hair</button>
+    <button class="filter" data-filter="nails">Nails</button>
+    <button class="filter" data-filter="face">Face</button>
+  </div>
+
+  <div class="cards">
+    <div class="card product" data-category="hair">
+      <div class="icon">🧴</div>
+      <h3>Repair Shampoo</h3>
+      <p class="price">€12</p>
+      <button class="buy">Add to cart</button>
+    </div>
+    <div class="card product" data-category="hair">
+      <div class="icon">✨</div>
+      <h3>Hair Mask</h3>
+      <p class="price">€15</p>
+      <button class="buy">Add to cart</button>
+    </div>
+    <div class="card product" data-category="nails">
+      <div class="icon">💅</div>
+      <h3>Nail Polish</h3>
+      <p class="price">€7</p>
+      <button class="buy">Add to cart</button>
+    </div>
+    <div class="card product" data-category="nails">
+      <div class="icon">🌿</div>
+      <h3>Cuticle Oil</h3>
+      <p class="price">€6</p>
+      <button class="buy">Add to cart</button>
+    </div>
+    <div class="card product" data-category="face">
+      <div class="icon">🧼</div>
+      <h3>Face Cream</h3>
+      <p class="price">€22</p>
+      <button class="buy">Add to cart</button>
+    </div>
+    <div class="card product" data-category="face">
+      <div class="icon">💧</div>
+      <h3>Face Serum</h3>
+      <p class="price">€28</p>
+      <button class="buy">Add to cart</button>
+    </div>
+  </div>
+</section>
+<section id="cart">
+  <h2>Your cart</h2>
+  <div class="cart-box">
+    <ul id="cart-items"></ul>
+    <p class="total">Total: €<span id="cart-total">0</span></p>
+  </div>
+</section>
+  <section id="booking">
+  <h2>Book an appointment</h2>
+
+  <div class="booking-form">
+    <label for="name">Your name</label>
+    <input type="text" id="name" placeholder="Anna">
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" placeholder="+371 20000000">
+
+    <label for="service">Service</label>
+    <select id="service">
+      <option value="">Choose a service</option>
+      <option>Hair</option>
+      <option>Nails</option>
+      <option>Face</option>
+      <option>Makeup</option>
+    </select>
+
+    <label for="specialist">Specialist</label>
+    <select id="specialist">
+      <option value="">Choose a specialist</option>
+      <option>Anna (Hair stylist)</option>
+      <option>Maria (Nail master)</option>
+      <option>Elena (Cosmetologist)</option>
+    </select>
+
+    <label for="date">Date</label>
+    <input type="date" id="date">
+
+    <label for="time">Time</label>
+    <select id="time">
+      <option value="">Choose a time</option>
+      <option>10:00</option>
+      <option>12:00</option>
+      <option>14:00</option>
+      <option>16:00</option>
+      <option>18:00</option>
+    </select>
+
+    <button id="book-button" class="button">Book now</button>
+    <p id="message"></p>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2026 Rose Beauty Salon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
